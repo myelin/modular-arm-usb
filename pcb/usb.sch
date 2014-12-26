@@ -97,4 +97,6 @@ Wire Wire Line
 	4150 3200 3750 3200
 Wire Wire Line
 	3750 3000 4150 3000
+Text Notes 2800 2550 0    60   ~ 0
+Probably need to reduce USB_VBUS before it gets to the MCU.
 $EndSCHEMATC

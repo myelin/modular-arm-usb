@@ -140,8 +140,8 @@ Text GLabel 8100 3050 2    60   Input ~ 0
 3V3
 Connection ~ 7550 3050
 Connection ~ 6650 3050
-Text Notes 2050 5600 0    60   ~ 0
-LD1117V33 = TO-220 0.8A 3v3 LDO, $0.31-$0.65\n\nLM3480IM3-3.3 = SOT-23 0.1A 3v3 LDO, US$0.34, apparently has issues if you apply power to the output side when the input is floating\n\nLD1117V33 suggests 100n cap on input, 10u on output.
+Text Notes 6350 4050 0    60   ~ 0
+LD1117V33 = TO-220 0.8A 3v3 LDO, $0.31-$0.65\n\nLM3480IM3-3.3 = SOT-23 0.1A 3v3 LDO, US$0.34,\napparently has issues if you apply power to the output\nwhen the input is floating\n\nLD1117V33 suggests 100n cap on input, 10u on output.
 Text Notes 2400 4750 0    60   ~ 0
 Lipo battery connectors have power on pin 2
 $Comp
@@ -165,11 +165,11 @@ Connection ~ 7550 3500
 Wire Wire Line
 	7550 3500 6400 3500
 Wire Wire Line
-	7600 3050 7500 3050
+	7500 3050 8100 3050
 Text Notes 6700 1300 0    60   ~ 0
-REQUIREMENTS\n\nLPC11U14 requires 1.8-3.6V\n\nnRF24L01+ requires 1.9-3.6V\n\nBecause we don't trust that the LDO won't melt down if we put 3v3 on its output\n(e.g. if the board is plugged into a debugger but not the usb port), we have an\noutput diode, which brings 3V3 down to 2.6V.\n\nTo bring the lipo output voltage down to a safe level, we pass it through a\ndiode too, so 3.4V-4.2V becomes 2.7-3.5V.
+REQUIREMENTS\n\nLPC11U14 requires 1.8-3.6V\n\nnRF24L01+ requires 1.9-3.6V\n\nTo bring the lipo output voltage down to a safe level, we pass it through a\ndiode, so 3.4V-4.2V becomes 2.7-3.5V.\n\nWS2812B LEDs are powered from the unregulated USB or Lipo input.\n\nPOPULATE EITHER THE BATTERY CONNECTOR AND DIODE, OR\nTHE FUSE AND REGULATOR.  DOING BOTH ON ONE BOARD WILL\nRESULT IN VUSB SHORTING TO 3V3 THROUGH THE BATT DIODE.
 Wire Wire Line
-	4750 3250 4750 3050
+	4750 3900 4750 3050
 $Comp
 L DIODE D?
 U 1 1 549D6318
@@ -187,17 +187,12 @@ Wire Wire Line
 	4950 4250 4200 4250
 Text GLabel 4950 4250 2    60   Input ~ 0
 3V3
-$Comp
-L DIODE D?
-U 1 1 549D6438
-P 7800 3050
-F 0 "D?" H 7800 3150 40  0000 C CNN
-F 1 "DIODE" H 7800 2950 40  0000 C CNN
-F 2 "~" H 7800 3050 60  0000 C CNN
-F 3 "~" H 7800 3050 60  0000 C CNN
-	1    7800 3050
-	1    0    0    -1  
-$EndComp
+Text GLabel 3200 3900 0    60   Input ~ 0
+VLED
 Wire Wire Line
-	8100 3050 8000 3050
+	3200 3900 4750 3900
+Wire Wire Line
+	3500 3900 3500 4250
+Connection ~ 3500 4250
+Connection ~ 3500 3900
 $EndSCHEMATC

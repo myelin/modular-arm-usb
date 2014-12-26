@@ -108,7 +108,7 @@ F 3 "~" H 2375 2000 60  0000 C CNN
 	1    2300 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 1650 1800 0    60   Input ~ 0
+Text GLabel 1650 1200 0    60   Input ~ 0
 3V3
 Text GLabel 1650 2000 0    60   Input ~ 0
 GND
@@ -124,8 +124,6 @@ Wire Wire Line
 	2425 1900 3050 1900
 Wire Wire Line
 	3050 1800 2425 1800
-Wire Wire Line
-	2175 1800 1650 1800
 Wire Wire Line
 	1650 2000 2175 2000
 Wire Wire Line
@@ -212,4 +210,29 @@ Wire Wire Line
 	6250 2200 7150 2200
 Wire Wire Line
 	7650 2200 7800 2200
+$Comp
+L R R?
+U 1 1 549D6951
+P 1700 1500
+F 0 "R?" V 1780 1500 40  0000 C CNN
+F 1 "NC" V 1707 1501 40  0000 C CNN
+F 2 "~" V 1630 1500 30  0000 C CNN
+F 3 "~" H 1700 1500 30  0000 C CNN
+	1    1700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 1800 1700 1800
+Wire Wire Line
+	1700 1800 1700 1750
+Wire Wire Line
+	1700 1250 1700 1200
+Wire Wire Line
+	1700 1200 1650 1200
+Text Notes 1825 1250 0    60   ~ 0
+Debugger not connected to 3V3 by\ndefault, to avoid accidentally\nbackfeeding power into the regulator.
+Text Notes 1275 3200 0    60   ~ 0
+One bypass cap for each VDD/VSS pair.
+Text Notes 7675 2500 0    60   ~ 0
+TO DO: figure out if we need to reduce the USB\nbus voltage before it gets to the MCU.
 $EndSCHEMATC
