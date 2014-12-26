@@ -48,4 +48,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 4300 3550 0    60   ~ 0
+One day we'll implement USB battery charging :)
 $EndSCHEMATC
