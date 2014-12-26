@@ -1,11 +1,13 @@
-update=12/26/2014 3:46:11 AM
+update=12/26/2014 4:04:55 AM
 version=1
-last_client=kicad
+last_client=pcbnew
 [cvpcb]
 version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -45,6 +47,9 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+LibName31=lpc11u14fbd48
+LibName32=nRF24L01+
+LibName33=pp_ws2812b
 [pcbnew]
 version=1
 LastNetListRead=
@@ -82,5 +87,7 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
-[general]
-version=1
+LibName17=nRF24L01+
+LibName18=pin_array_5x2_50mil
+LibName19=pin_array_5x2_50mil_smd
+LibName20=ws2812b_pp
