@@ -121,7 +121,7 @@ L C C?
 U 1 1 549D5130
 P 3300 4750
 F 0 "C?" H 3300 4850 40  0000 L CNN
-F 1 "C" H 3306 4665 40  0000 L CNN
+F 1 "100n" H 3306 4665 40  0000 L CNN
 F 2 "~" H 3338 4600 30  0000 C CNN
 F 3 "~" H 3300 4750 60  0000 C CNN
 	1    3300 4750
@@ -132,7 +132,7 @@ L C C?
 U 1 1 549D513F
 P 4200 4750
 F 0 "C?" H 4200 4850 40  0000 L CNN
-F 1 "C" H 4206 4665 40  0000 L CNN
+F 1 "22u" H 4206 4665 40  0000 L CNN
 F 2 "~" H 4238 4600 30  0000 C CNN
 F 3 "~" H 4200 4750 60  0000 C CNN
 	1    4200 4750
@@ -142,25 +142,41 @@ Text GLabel 3750 5050 3    60   Input ~ 0
 GND
 Wire Wire Line
 	3750 4800 3750 5050
-Wire Wire Line
-	3300 4950 4200 4950
 Connection ~ 3750 4950
-Wire Wire Line
-	4150 4500 4250 4500
 Wire Wire Line
 	4200 4500 4200 4550
 Wire Wire Line
-	3250 4500 3350 4500
-Wire Wire Line
 	3300 4500 3300 4550
-Text GLabel 3250 4500 0    60   Input ~ 0
+Text GLabel 3000 4500 0    60   Input ~ 0
 5V
 Text GLabel 4250 4500 2    60   Input ~ 0
 3V3
 Connection ~ 4200 4500
 Connection ~ 3300 4500
 Text Notes 2050 5600 0    60   ~ 0
-LD1117V33 = TO-220 0.8A 3v3 LDO, $0.31-$0.65\n\nLM3480IM3-3.3 = SOT-23 0.1A 3v3 LDO, US$0.34, apparently has issues if you apply power to the output side when the input is floating
+LD1117V33 = TO-220 0.8A 3v3 LDO, $0.31-$0.65\n\nLM3480IM3-3.3 = SOT-23 0.1A 3v3 LDO, US$0.34, apparently has issues if you apply power to the output side when the input is floating\n\nLD1117V33 suggests 100n cap on input, 10u on output.
 Text Notes 2050 3650 0    60   ~ 0
 Lipo battery connectors have power on pin 2
+$Comp
+L C C?
+U 1 1 549D6202
+P 3050 4750
+F 0 "C?" H 3050 4850 40  0000 L CNN
+F 1 "22u" H 3056 4665 40  0000 L CNN
+F 2 "~" H 3088 4600 30  0000 C CNN
+F 3 "~" H 3050 4750 60  0000 C CNN
+	1    3050 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4500 3000 4500
+Wire Wire Line
+	3050 4500 3050 4550
+Connection ~ 3050 4500
+Connection ~ 3300 4950
+Connection ~ 4200 4950
+Wire Wire Line
+	4200 4950 3050 4950
+Wire Wire Line
+	4250 4500 4150 4500
 $EndSCHEMATC

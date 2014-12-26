@@ -48,4 +48,47 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L NRF24L01+ U?
+U 1 1 549D5C9C
+P 5250 3550
+F 0 "U?" H 5250 3250 50  0000 C CNN
+F 1 "NRF24L01+" H 5250 3850 50  0000 C CNN
+F 2 "MODULE" H 5250 3650 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5250 3500 50  0001 C CNN
+	1    5250 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 3350 0    60   Input ~ 0
+GND
+Wire Wire Line
+	4300 3350 4500 3350
+Text GLabel 4300 3500 0    60   Input ~ 0
+3V3
+Text GLabel 4300 3650 0    60   Input ~ 0
+RF24_CE
+Text GLabel 4300 3800 0    60   Input ~ 0
+RF24_CSN
+Text GLabel 6200 3800 2    60   Input ~ 0
+RF24_IRQ
+Text GLabel 6200 3650 2    60   Input ~ 0
+RF24_MISO
+Text GLabel 6200 3500 2    60   Input ~ 0
+RF24_MOSI
+Text GLabel 6200 3350 2    60   Input ~ 0
+RF24_SCK
+Wire Wire Line
+	6200 3350 6000 3350
+Wire Wire Line
+	6000 3500 6200 3500
+Wire Wire Line
+	6200 3650 6000 3650
+Wire Wire Line
+	6000 3800 6200 3800
+Wire Wire Line
+	4500 3800 4300 3800
+Wire Wire Line
+	4300 3650 4500 3650
+Wire Wire Line
+	4500 3500 4300 3500
 $EndSCHEMATC

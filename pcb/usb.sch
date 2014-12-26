@@ -48,9 +48,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 3750 2600 0    60   Input ~ 0
-USB_VBUS
 Text GLabel 3750 2800 0    60   Input ~ 0
+USB_VBUS
+Text GLabel 3500 4900 0    60   Input ~ 0
 nUSB_CONNECT
 Text GLabel 3750 3000 0    60   Input ~ 0
 USB_DM
@@ -61,14 +61,40 @@ GND
 $Comp
 L CONN_4 P?
 U 1 1 549D55CB
-P 5650 3000
-F 0 "P?" V 5600 3000 50  0000 C CNN
-F 1 "USB" V 5700 3000 50  0000 C CNN
-F 2 "" H 5650 3000 60  0000 C CNN
-F 3 "" H 5650 3000 60  0000 C CNN
-	1    5650 3000
+P 6400 3050
+F 0 "P?" V 6350 3050 50  0000 C CNN
+F 1 "USB" V 6450 3050 50  0000 C CNN
+F 2 "" H 6400 3050 60  0000 C CNN
+F 3 "" H 6400 3050 60  0000 C CNN
+	1    6400 3050
 	1    0    0    -1  
 $EndComp
-Text Notes 2550 2200 0    60   ~ 0
-Micro-USB connectors have five pins, and implement nUSB_CONNECT somehow, but I guess we'll just be using four?
+Text Notes 2750 5150 0    60   ~ 0
+nUSB_CONNECT is for LPC SoftConnect feature, which we aren't using.
+$Comp
+L R R?
+U 1 1 549D6477
+P 4400 3000
+F 0 "R?" V 4480 3000 40  0000 C CNN
+F 1 "33R" V 4407 3001 40  0000 C CNN
+F 2 "~" V 4330 3000 30  0000 C CNN
+F 3 "~" H 4400 3000 30  0000 C CNN
+	1    4400 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 549D6486
+P 4400 3200
+F 0 "R?" V 4480 3200 40  0000 C CNN
+F 1 "33R" V 4407 3201 40  0000 C CNN
+F 2 "~" V 4330 3200 30  0000 C CNN
+F 3 "~" H 4400 3200 30  0000 C CNN
+	1    4400 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 3200 3750 3200
+Wire Wire Line
+	3750 3000 4150 3000
 $EndSCHEMATC
