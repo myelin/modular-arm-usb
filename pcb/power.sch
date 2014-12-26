@@ -29,10 +29,10 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:arm-swd-header
 LIBS:lpc11u14fbd48
 LIBS:nRF24L01+
 LIBS:pp_ws2812b
-LIBS:arm-swd-header
 LIBS:modular-arm-usb-cache
 EELAYER 27 0
 EELAYER END
