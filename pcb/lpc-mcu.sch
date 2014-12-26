@@ -49,10 +49,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LPC11U14FBD48 IC?
+L LPC11U14FBD48 IC1
 U 1 1 549D53F4
 P 5250 4200
-F 0 "IC?" H 4500 6250 40  0000 L BNN
+F 0 "IC1" H 4500 6250 40  0000 L BNN
 F 1 "LPC11U14FBD48" H 4550 2200 40  0000 L BNN
 F 2 "LQFP48" H 5250 4200 30  0000 C CIN
 F 3 "~" H 5250 4200 60  0000 C CNN
@@ -68,13 +68,13 @@ GND
 Text GLabel 4050 3950 0    60   Input ~ 0
 GND
 Text GLabel 4050 4250 0    60   Input ~ 0
-USB_DM
+LPC_USB_DM
 Text GLabel 4050 4350 0    60   Input ~ 0
-USB_DP
+LPC_USB_DP
 Text Label 6600 2200 0    60   ~ 0
 nRESET
 Text GLabel 7050 2500 2    60   Input ~ 0
-USB_VBUS
+LPC_USB_VBUS
 Text Label 6600 2300 0    60   ~ 0
 PIO0_1
 Wire Wire Line
@@ -82,7 +82,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 2500 6250 2500
 Text GLabel 7050 2800 2    60   Input ~ 0
-nUSB_CONNECT
+LPC_nUSB_CONNECT
 Wire Wire Line
 	7050 2800 6250 2800
 Wire Wire Line
@@ -98,10 +98,10 @@ Wire Wire Line
 Wire Wire Line
 	4350 4350 4050 4350
 $Comp
-L ARM-SWD-HEADER CON?
+L ARM-SWD-HEADER CON1
 U 1 1 549D5A39
 P 2300 2000
-F 0 "CON?" H 2205 2330 50  0000 C CNN
+F 0 "CON1" H 2205 2330 50  0000 C CNN
 F 1 "ARM-SWD-HEADER" H 2035 1670 50  0000 L BNN
 F 2 "pin_array_5x2_50mil_smd" V 1875 2000 50  0001 C CNN
 F 3 "~" H 2375 2000 60  0000 C CNN
@@ -162,10 +162,10 @@ RF24_CSN
 Text GLabel 9300 5000 2    60   Input ~ 0
 RF24_IRQ
 $Comp
-L C C?
+L C C1
 U 1 1 549D5E39
 P 1800 3550
-F 0 "C?" H 1800 3650 40  0000 L CNN
+F 0 "C1" H 1800 3650 40  0000 L CNN
 F 1 "100n" H 1806 3465 40  0000 L CNN
 F 2 "~" H 1838 3400 30  0000 C CNN
 F 3 "~" H 1800 3550 60  0000 C CNN
@@ -173,10 +173,10 @@ F 3 "~" H 1800 3550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C?
+L C C2
 U 1 1 549D5E52
 P 2050 3550
-F 0 "C?" H 2050 3650 40  0000 L CNN
+F 0 "C2" H 2050 3650 40  0000 L CNN
 F 1 "100n" H 2056 3465 40  0000 L CNN
 F 2 "~" H 2088 3400 30  0000 C CNN
 F 3 "~" H 2050 3550 60  0000 C CNN
@@ -194,10 +194,10 @@ GND
 Connection ~ 1800 3750
 Connection ~ 1800 3350
 $Comp
-L R R?
+L R R2
 U 1 1 549D5EC0
 P 7400 2200
-F 0 "R?" V 7480 2200 40  0000 C CNN
+F 0 "R2" V 7480 2200 40  0000 C CNN
 F 1 "22k" V 7407 2201 40  0000 C CNN
 F 2 "~" V 7330 2200 30  0000 C CNN
 F 3 "~" H 7400 2200 30  0000 C CNN
@@ -211,10 +211,10 @@ Wire Wire Line
 Wire Wire Line
 	7650 2200 7800 2200
 $Comp
-L R R?
+L R R1
 U 1 1 549D6951
 P 1700 1500
-F 0 "R?" V 1780 1500 40  0000 C CNN
+F 0 "R1" V 1780 1500 40  0000 C CNN
 F 1 "NC" V 1707 1501 40  0000 C CNN
 F 2 "~" V 1630 1500 30  0000 C CNN
 F 3 "~" H 1700 1500 30  0000 C CNN
@@ -233,6 +233,6 @@ Text Notes 1825 1250 0    60   ~ 0
 Debugger not connected to 3V3 by\ndefault, to avoid accidentally\nbackfeeding power into the regulator.
 Text Notes 1275 3200 0    60   ~ 0
 One bypass cap for each VDD/VSS pair.
-Text Notes 7675 2500 0    60   ~ 0
+Text Notes 8100 2500 0    60   ~ 0
 TO DO: figure out if we need to reduce the USB\nbus voltage before it gets to the MCU.
 $EndSCHEMATC

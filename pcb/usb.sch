@@ -48,34 +48,34 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 3750 2800 0    60   Input ~ 0
-USB_VBUS
+Text GLabel 3300 4450 0    60   Input ~ 0
+LPC_USB_VBUS
 Text GLabel 3500 4900 0    60   Input ~ 0
-nUSB_CONNECT
+LPC_nUSB_CONNECT
 Text GLabel 3750 3000 0    60   Input ~ 0
-USB_DM
+LPC_USB_DM
 Text GLabel 3750 3200 0    60   Input ~ 0
-USB_DP
+LPC_USB_DP
 Text GLabel 3750 3400 0    60   Input ~ 0
 GND
 $Comp
-L CONN_4 P?
+L CONN_4 P1
 U 1 1 549D55CB
-P 6400 3050
-F 0 "P?" V 6350 3050 50  0000 C CNN
-F 1 "USB" V 6450 3050 50  0000 C CNN
-F 2 "" H 6400 3050 60  0000 C CNN
-F 3 "" H 6400 3050 60  0000 C CNN
-	1    6400 3050
+P 6150 3100
+F 0 "P1" V 6100 3100 50  0000 C CNN
+F 1 "USB" V 6200 3100 50  0000 C CNN
+F 2 "USB_A_PCB" H 6300 2800 60  0000 C CNN
+F 3 "" H 6150 3100 60  0000 C CNN
+	1    6150 3100
 	1    0    0    -1  
 $EndComp
-Text Notes 2750 5150 0    60   ~ 0
-nUSB_CONNECT is for LPC SoftConnect feature, which we aren't using.
+Text Notes 2550 5150 0    60   ~ 0
+LPC_nUSB_CONNECT is for LPC SoftConnect feature, which we aren't using.
 $Comp
-L R R?
+L R R5
 U 1 1 549D6477
 P 4400 3000
-F 0 "R?" V 4480 3000 40  0000 C CNN
+F 0 "R5" V 4480 3000 40  0000 C CNN
 F 1 "33R" V 4407 3001 40  0000 C CNN
 F 2 "~" V 4330 3000 30  0000 C CNN
 F 3 "~" H 4400 3000 30  0000 C CNN
@@ -83,10 +83,10 @@ F 3 "~" H 4400 3000 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R?
+L R R6
 U 1 1 549D6486
 P 4400 3200
-F 0 "R?" V 4480 3200 40  0000 C CNN
+F 0 "R6" V 4480 3200 40  0000 C CNN
 F 1 "33R" V 4407 3201 40  0000 C CNN
 F 2 "~" V 4330 3200 30  0000 C CNN
 F 3 "~" H 4400 3200 30  0000 C CNN
@@ -97,6 +97,75 @@ Wire Wire Line
 	4150 3200 3750 3200
 Wire Wire Line
 	3750 3000 4150 3000
-Text Notes 2800 2550 0    60   ~ 0
-Probably need to reduce USB_VBUS before it gets to the MCU.
+Text GLabel 3750 2800 0    60   Input ~ 0
+VUSB
+Text Notes 2550 4700 0    60   ~ 0
+LPC_USB_VBUS is left unconnected for bus-powered devices (LPC11U2x DS 11.1)
+$Comp
+L R R3
+U 1 1 549DD948
+P 4850 2300
+F 0 "R3" V 4930 2300 40  0000 C CNN
+F 1 "R" V 4857 2301 40  0000 C CNN
+F 2 "~" V 4780 2300 30  0000 C CNN
+F 3 "~" H 4850 2300 30  0000 C CNN
+	1    4850 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 549DD957
+P 5100 2300
+F 0 "R4" V 5180 2300 40  0000 C CNN
+F 1 "R" V 5107 2301 40  0000 C CNN
+F 2 "~" V 5030 2300 30  0000 C CNN
+F 3 "~" H 5100 2300 30  0000 C CNN
+	1    5100 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 1800 0    60   Input ~ 0
+3V3
+Wire Wire Line
+	4700 1800 5100 1800
+Wire Wire Line
+	4850 1800 4850 2050
+Wire Wire Line
+	5100 1800 5100 2050
+Connection ~ 4850 1800
+Wire Wire Line
+	4650 3000 5400 3000
+Wire Wire Line
+	4850 3000 4850 2550
+Wire Wire Line
+	4650 3200 5400 3200
+Wire Wire Line
+	5100 3200 5100 2550
+Wire Wire Line
+	5400 3000 5400 3050
+Wire Wire Line
+	5400 3050 5800 3050
+Connection ~ 4850 3000
+Wire Wire Line
+	5400 3200 5400 3150
+Wire Wire Line
+	5400 3150 5800 3150
+Connection ~ 5100 3200
+Wire Wire Line
+	3750 3400 5550 3400
+Wire Wire Line
+	5550 3400 5550 3250
+Wire Wire Line
+	5550 3250 5800 3250
+Wire Wire Line
+	5800 2950 5550 2950
+Wire Wire Line
+	5550 2950 5550 2800
+Wire Wire Line
+	5550 2800 3750 2800
+Text Notes 6050 2150 0    60   ~ 0
+USB pinout from http://en.wikipedia.org/wiki/USB\n\n4: -\n3: D+\n2: D-\n1: +
+Text Label 5600 3050 0    60   ~ 0
+DM
+Text Label 5600 3150 0    60   ~ 0
+DP
 $EndSCHEMATC
