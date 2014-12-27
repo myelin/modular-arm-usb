@@ -142,7 +142,7 @@ F 3 "~" H 6250 4550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 6700 1300 0    60   ~ 0
-REQUIREMENTS\n\nLPC11U14 requires 1.8-3.6V\n\nnRF24L01+ requires 1.9-3.6V\n\nTo bring the lipo output voltage down to a safe level, we pass it through a\ndiode, so 3.4V-4.2V becomes 2.7-3.5V.\n\nWS2812B LEDs are powered from the unregulated USB or Lipo input.\n\nPOPULATE EITHER THE BATTERY CONNECTOR AND DIODE, OR\nTHE FUSE AND REGULATOR.  DOING BOTH ON ONE BOARD WILL\nRESULT IN VUSB SHORTING TO 3V3 THROUGH THE BATT DIODE.
+REQUIREMENTS\n\nLPC11U14 requires 1.8-3.6V\n\nnRF24L01+ requires 1.9-3.6V\n\nTo bring the lipo output voltage down to a safe level, we pass it through a\ndiode, so 3.4V-4.2V becomes 2.7-3.5V.\n\nWS2812B LEDs won't work well below 3v, but their supply voltage can't\nbe too much more than the mcu's logic voltage, so we'll use 3V3 for them.\n\nPOPULATE EITHER THE BATTERY CONNECTOR AND DIODE, OR\nTHE FUSE AND REGULATOR.  DOING BOTH ON ONE BOARD WILL\nRESULT IN VUSB SHORTING TO 3V3 THROUGH THE BATT DIODE.
 $Comp
 L DIODE D1
 U 1 1 549D6318
