@@ -1,17 +1,17 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 12/27/2014 1:52:22 AM
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 12/27/2014 2:14:36 AM
 
 BeginCmp
 TimeStamp = /549D4C68/549D5E39;
 Reference = C1;
 ValeurCmp = 100n;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
 TimeStamp = /549D4C68/549D5E52;
 Reference = C2;
 ValeurCmp = 100n;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
@@ -25,7 +25,7 @@ BeginCmp
 TimeStamp = /549D4C8A/549D5130;
 Reference = C4;
 ValeurCmp = 100n;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
@@ -39,28 +39,28 @@ BeginCmp
 TimeStamp = /549D4C68/549E71AB;
 Reference = C6;
 ValeurCmp = 22p;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
 TimeStamp = /549D4C68/549E71C4;
 Reference = C7;
 ValeurCmp = 22p;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
 TimeStamp = /549D4C81/549E779B;
 Reference = C8;
 ValeurCmp = 47p;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
 TimeStamp = /549D4C81/549E778E;
 Reference = C9;
 ValeurCmp = 47p;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
@@ -89,6 +89,13 @@ TimeStamp = /549D4C68/549D53F4;
 Reference = IC1;
 ValeurCmp = LPC11U14FBD48;
 IdModule  = NXP_LQFP48_BY_HAND;
+EndCmp
+
+BeginCmp
+TimeStamp = /549D4C68/549E8468;
+Reference = L1;
+ValeurCmp = PP_WS2812B;
+IdModule  = WS2812B_PP;
 EndCmp
 
 BeginCmp
@@ -130,42 +137,42 @@ BeginCmp
 TimeStamp = /549D4C68/549D6951;
 Reference = R1;
 ValeurCmp = NC;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
 TimeStamp = /549D4C68/549D5EC0;
 Reference = R2;
 ValeurCmp = 22k;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
 TimeStamp = /549D4C81/549DD948;
 Reference = R3;
 ValeurCmp = 1k5 LS;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
 TimeStamp = /549D4C81/549DD957;
 Reference = R4;
 ValeurCmp = 1k5 FS;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
 TimeStamp = /549D4C81/549D6477;
 Reference = R5;
 ValeurCmp = 33R;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
 TimeStamp = /549D4C81/549D6486;
 Reference = R6;
 ValeurCmp = 33R;
-IdModule  = SM0805;
+IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp

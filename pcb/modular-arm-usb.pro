@@ -1,4 +1,4 @@
-update=12/27/2014 12:49:17 AM
+update=12/27/2014 2:14:15 AM
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -55,10 +55,10 @@ LibName34=parts/myelin/pp_ws2812b
 version=1
 LastNetListRead=modular-arm-usb.net
 UseCmpFile=1
-PadDrill=0.000000000000
-PadDrillOvalY=0.000000000000
-PadSizeH=1.750000000000
-PadSizeV=0.250000000000
+PadDrill=1.125000000000
+PadDrillOvalY=1.125000000000
+PadSizeH=1.778000000000
+PadSizeV=1.778000000000
 PcbTextSizeV=1.500000000000
 PcbTextSizeH=1.500000000000
 PcbTextThickness=0.300000000000
@@ -96,3 +96,4 @@ LibName21=parts/myelin/ws2812b_pp
 LibName22=parts/myelin/usb_a_pcb
 LibName23=parts/myelin/nxp_lqfp48_by_hand
 LibName24=parts/myelin/LD1117V33
+LibName25=parts/myelin/sm0805_nosilkscreen

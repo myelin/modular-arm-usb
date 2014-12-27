@@ -287,7 +287,7 @@ Connection ~ 3600 4700
 Wire Wire Line
 	4050 5300 4050 4800
 Wire Wire Line
-	4050 4800 4350 4800
+	3900 4800 4350 4800
 Connection ~ 3600 5300
 $Comp
 L CONN_6 P4
@@ -315,6 +315,15 @@ Text GLabel 2050 6150 0    60   Input ~ 0
 3V3
 Text GLabel 2050 7350 0    60   Input ~ 0
 GND
-Text Label 1600 6750 2    60   ~ 0
+Text Label 1150 6750 0    60   ~ 0
+LED_INPUT
+Text Label 3900 4700 0    60   ~ 0
+XTALIN
+Text Label 3900 4800 0    60   ~ 0
+XTALOUT
+Connection ~ 4050 4800
+Wire Wire Line
+	1150 6750 1600 6750
+Text Label 6250 6100 0    60   ~ 0
 LED_INPUT
 $EndSCHEMATC
