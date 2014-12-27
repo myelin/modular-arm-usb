@@ -1,4 +1,4 @@
-update=12/26/2014 3:09:33 PM
+update=12/26/2014 3:45:08 PM
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -94,3 +94,4 @@ LibName19=parts/myelin/pin_array_5x2_50mil_smd
 LibName20=parts/myelin/S2B-PH-SM4-TB-LF-SN
 LibName21=parts/myelin/ws2812b_pp
 LibName22=parts/myelin/usb_a_pcb
+LibName23=parts/myelin/nxp_lqfp48_by_hand

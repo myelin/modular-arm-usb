@@ -1,12 +1,12 @@
 (export (version D)
   (design
     (source C:/Users/Phil/Documents/ee/modular-arm-usb/pcb/modular-arm-usb.sch)
-    (date "12/26/2014 3:17:38 PM")
+    (date "12/26/2014 11:07:26 PM")
     (tool "eeschema (2013-07-07 BZR 4022)-stable"))
   (components
     (comp (ref IC1)
       (value LPC11U14FBD48)
-      (footprint LQFP48)
+      (footprint NXP_LQFP48_BY_HAND)
       (libsource (lib lpc11u14fbd48) (part LPC11U14FBD48))
       (sheetpath (names /lpc-mcu/) (tstamps /549D4C68/))
       (tstamp 549D53F4))
@@ -222,7 +222,7 @@
       (fields
         (field (name Reference) IC)
         (field (name Value) LPC11U14FBD48)
-        (field (name Footprint) LQFP48)
+        (field (name Footprint) NXP_LQFP48_BY_HAND)
         (field (name Datasheet) ~))
       (pins
         (pin (num 1) (name PIO1_25/CT32B0_MAT1) (type BiDi))

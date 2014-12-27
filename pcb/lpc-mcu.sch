@@ -40,7 +40,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 6
 Title ""
-Date "26 dec 2014"
+Date "27 dec 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -54,7 +54,7 @@ U 1 1 549D53F4
 P 5250 4200
 F 0 "IC1" H 4500 6250 40  0000 L BNN
 F 1 "LPC11U14FBD48" H 4550 2200 40  0000 L BNN
-F 2 "LQFP48" H 5250 4200 30  0000 C CIN
+F 2 "NXP_LQFP48_BY_HAND" H 5720 2210 30  0000 C CIN
 F 3 "~" H 5250 4200 60  0000 C CNN
 	1    5250 4200
 	1    0    0    -1  
