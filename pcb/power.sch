@@ -156,8 +156,6 @@ F 3 "~" H 3850 5500 60  0000 C CNN
 $EndComp
 Text GLabel 4800 5500 2    60   Input ~ 0
 3V3
-Text GLabel 3050 5150 0    60   Input ~ 0
-VLED
 $Comp
 L NCP1117ST33T3G U1
 U 1 1 549DD6D6
@@ -195,17 +193,9 @@ Wire Wire Line
 Wire Wire Line
 	7350 4300 7950 4300
 Wire Wire Line
-	4600 5150 4600 4300
-Wire Wire Line
 	2950 5500 3650 5500
 Wire Wire Line
 	4800 5500 4050 5500
-Wire Wire Line
-	3050 5150 4600 5150
-Wire Wire Line
-	3350 5150 3350 5500
-Connection ~ 3350 5500
-Connection ~ 3350 5150
 Wire Wire Line
 	6950 3900 7250 3900
 Wire Wire Line
@@ -217,4 +207,28 @@ Wire Wire Line
 	6550 3600 6500 3600
 Wire Wire Line
 	7350 3600 7400 3600
+$Comp
+L CONN_2 P5
+U 1 1 549E81C9
+P 1850 5600
+F 0 "P5" V 1800 5600 40  0000 C CNN
+F 1 "BATT" V 1900 5600 40  0000 C CNN
+F 2 "" H 1850 5600 60  0000 C CNN
+F 3 "" H 1850 5600 60  0000 C CNN
+	1    1850 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5500 1300 5500
+Wire Wire Line
+	1300 5500 1300 5300
+Wire Wire Line
+	1300 5300 3100 5300
+Wire Wire Line
+	3100 5300 3100 5500
+Connection ~ 3100 5500
+Text GLabel 1500 5700 0    60   Input ~ 0
+GND
+Wire Wire Line
+	4600 4300 4600 4500
 $EndSCHEMATC

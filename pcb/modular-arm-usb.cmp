@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 12/27/2014 1:02:03 AM
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 12/27/2014 1:52:22 AM
 
 BeginCmp
 TimeStamp = /549D4C68/549D5E39;
@@ -46,6 +46,20 @@ BeginCmp
 TimeStamp = /549D4C68/549E71C4;
 Reference = C7;
 ValeurCmp = 22p;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /549D4C81/549E779B;
+Reference = C8;
+ValeurCmp = 47p;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /549D4C81/549E778E;
+Reference = C9;
+ValeurCmp = 47p;
 IdModule  = SM0805;
 EndCmp
 
@@ -99,6 +113,20 @@ IdModule  = S2B-PH-SM4-TB(LF)(SN);
 EndCmp
 
 BeginCmp
+TimeStamp = /549D4C68/549E7D82;
+Reference = P4;
+ValeurCmp = GPIO;
+IdModule  = PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /549D4C8A/549E81C9;
+Reference = P5;
+ValeurCmp = BATT;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
 TimeStamp = /549D4C68/549D6951;
 Reference = R1;
 ValeurCmp = NC;
@@ -115,14 +143,14 @@ EndCmp
 BeginCmp
 TimeStamp = /549D4C81/549DD948;
 Reference = R3;
-ValeurCmp = R;
+ValeurCmp = 1k5 LS;
 IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /549D4C81/549DD957;
 Reference = R4;
-ValeurCmp = R;
+ValeurCmp = 1k5 FS;
 IdModule  = SM0805;
 EndCmp
 
