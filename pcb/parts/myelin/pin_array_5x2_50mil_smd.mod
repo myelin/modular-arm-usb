@@ -1,11 +1,11 @@
-PCBNEW-LibModule-V1  12/26/2014 4:05:33 AM
+PCBNEW-LibModule-V1  12/27/2014 2:27:27 AM
 # encoding utf-8
 Units mm
 $INDEX
 pin_array_5x2_50mil_smd
 $EndINDEX
 $MODULE pin_array_5x2_50mil_smd
-Po 0 0 0 15 546D2FDE 00000000 ~~
+Po 0 0 0 15 549E898C 00000000 ~~
 Li pin_array_5x2_50mil_smd
 Cd Double rangee de contacts 2 x 4 pins
 Kw CONN
@@ -14,9 +14,9 @@ AR
 Op 0 0 0
 T0 -4.445 0 1.016 1.016 900 0.2032 N V 21 N "pin_array_5x2_50mil_smd"
 T1 4.318 0 1.016 1.016 900 0.2032 N I 21 N "Val**"
-DS -1.905 0.381 -3.302 0.381 0.15 21
-DS -3.302 0.381 -3.302 3.556 0.15 21
-DS -3.302 3.556 -1.905 3.556 0.15 21
+DS -1.9 0.3 -3.4 0.3 0.3 21
+DS -1.9 3.6 -3.4 3.6 0.3 21
+DS -3.4 3.6 -3.4 0.3 0.3 21
 DS -2.54 1.524 -2.794 1.905 0.15 21
 DS -2.794 1.905 -2.413 1.905 0.15 21
 DS -2.413 1.905 -2.286 1.905 0.15 21

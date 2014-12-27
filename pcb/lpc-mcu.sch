@@ -71,14 +71,14 @@ Text GLabel 4050 4250 0    60   Input ~ 0
 LPC_USB_DM
 Text GLabel 4050 4350 0    60   Input ~ 0
 LPC_USB_DP
-Text Label 6600 2200 0    60   ~ 0
+Text Label 6750 2200 0    60   ~ 0
 nRESET
 Text GLabel 7050 2500 2    60   Input ~ 0
 LPC_USB_VBUS
-Text Label 6600 2300 0    60   ~ 0
+Text Label 6750 2300 0    60   ~ 0
 PIO0_1
 Wire Wire Line
-	6600 2300 6250 2300
+	6250 2300 6750 2300
 Wire Wire Line
 	7050 2500 6250 2500
 Text GLabel 7050 2800 2    60   Input ~ 0
@@ -292,12 +292,12 @@ Connection ~ 3600 5300
 $Comp
 L CONN_6 P4
 U 1 1 549E7D82
-P 9550 6000
-F 0 "P4" V 9500 6000 60  0000 C CNN
-F 1 "GPIO" V 9600 6000 60  0000 C CNN
-F 2 "" H 9550 6000 60  0000 C CNN
-F 3 "" H 9550 6000 60  0000 C CNN
-	1    9550 6000
+P 9550 5900
+F 0 "P4" V 9500 5900 60  0000 C CNN
+F 1 "GPIO" V 9600 5900 60  0000 C CNN
+F 2 "" H 9550 5900 60  0000 C CNN
+F 3 "" H 9550 5900 60  0000 C CNN
+	1    9550 5900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -324,6 +324,127 @@ XTALOUT
 Connection ~ 4050 4800
 Wire Wire Line
 	1150 6750 1600 6750
-Text Label 6250 6100 0    60   ~ 0
+Text Label 6250 2900 0    60   ~ 0
 LED_INPUT
+Text Label 6250 2600 0    60   ~ 0
+SCL
+Text Label 6250 2700 0    60   ~ 0
+SDA
+Text GLabel 9200 5650 0    60   Input ~ 0
+GND
+Text Label 8750 5850 0    60   ~ 0
+SCL
+Text Label 8750 5950 0    60   ~ 0
+SDA
+Wire Wire Line
+	8750 5950 9200 5950
+Wire Wire Line
+	9200 5850 8750 5850
+Text Label 6250 6000 0    60   ~ 0
+SCK0
+Text Label 6250 3100 0    60   ~ 0
+MOSI0
+Text Label 6250 3000 0    60   ~ 0
+MISO0
+Text Label 6250 2400 0    60   ~ 0
+SSEL0
+Text Label 6250 5100 0    60   ~ 0
+SCK1
+Text Label 6250 4300 0    60   ~ 0
+MOSI1
+Text Label 6250 5200 0    60   ~ 0
+MISO1
+Text Label 6250 5400 0    60   ~ 0
+SSEL1
+Text Label 6250 3300 0    60   ~ 0
+AD0
+Text Label 6250 3400 0    60   ~ 0
+AD1
+Text Label 6250 3600 0    60   ~ 0
+AD3
+Text Label 6250 3800 0    60   ~ 0
+AD5
+Text Label 6250 4400 0    60   ~ 0
+AD6
+Text Label 6250 4500 0    60   ~ 0
+AD7
+Text Label 6250 2300 0    60   ~ 0
+CLKOUT
+Text Label 6250 5700 0    60   ~ 0
+RXD
+Text Label 6250 5800 0    60   ~ 0
+TXD
+Text Label 8750 6050 0    60   ~ 0
+RXD
+Text Label 8750 6150 0    60   ~ 0
+TXD
+Wire Wire Line
+	8750 6050 9200 6050
+Wire Wire Line
+	9200 6150 8750 6150
+Text Label 8750 4250 0    60   ~ 0
+SCK0
+Text Label 8750 4400 0    60   ~ 0
+MOSI0
+Text Label 8750 4550 0    60   ~ 0
+MISO0
+Text Label 8750 4850 0    60   ~ 0
+SSEL0
+Wire Wire Line
+	8750 4850 9300 4850
+Wire Wire Line
+	9300 4550 8750 4550
+Wire Wire Line
+	8750 4400 9300 4400
+Wire Wire Line
+	9300 4250 8750 4250
+Wire Wire Line
+	8750 4700 9300 4700
+Wire Wire Line
+	8750 5000 9300 5000
+Text Label 6250 6100 0    60   ~ 0
+RF_CE
+Text Label 8750 4700 0    60   ~ 0
+RF_CE
+Text Label 8750 5000 0    60   ~ 0
+RF_IRQ
+Text Label 6250 5900 0    60   ~ 0
+RF_IRQ
+Text GLabel 9200 5750 0    60   Input ~ 0
+3V3
+$Comp
+L CONN_6 P6
+U 1 1 549E9A45
+P 9550 6650
+F 0 "P6" V 9500 6650 60  0000 C CNN
+F 1 "GPIO2" V 9600 6650 60  0000 C CNN
+F 2 "" H 9550 6650 60  0000 C CNN
+F 3 "" H 9550 6650 60  0000 C CNN
+	1    9550 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 6400 9200 6400
+Wire Wire Line
+	8750 6500 9200 6500
+Wire Wire Line
+	8750 6600 9200 6600
+Wire Wire Line
+	8750 6700 9200 6700
+Wire Wire Line
+	8750 6800 9200 6800
+Wire Wire Line
+	8750 6900 9200 6900
+Text Label 8750 6400 0    60   ~ 0
+AD0
+Text Label 8750 6500 0    60   ~ 0
+AD1
+Text Label 8750 6900 0    60   ~ 0
+SCK1
+Text Label 8750 6800 0    60   ~ 0
+MOSI1
+Text Label 8750 6700 0    60   ~ 0
+MISO1
+Text Label 8750 6600 0    60   ~ 0
+SSEL1
 $EndSCHEMATC
