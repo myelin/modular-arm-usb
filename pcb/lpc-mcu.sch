@@ -235,4 +235,58 @@ Text Notes 1275 3200 0    60   ~ 0
 One bypass cap for each VDD/VSS pair.
 Text Notes 8100 2500 0    60   ~ 0
 TO DO: figure out if we need to reduce the USB\nbus voltage before it gets to the MCU.
+$Comp
+L CRYSTAL X1
+U 1 1 549E7192
+P 3600 5000
+F 0 "X1" H 3600 5150 60  0000 C CNN
+F 1 "CRYSTAL" H 3600 4850 60  0000 C CNN
+F 2 "~" H 3600 5000 60  0000 C CNN
+F 3 "~" H 3600 5000 60  0000 C CNN
+	1    3600 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C6
+U 1 1 549E71AB
+P 3100 4700
+F 0 "C6" H 3100 4800 40  0000 L CNN
+F 1 "22p" H 3106 4615 40  0000 L CNN
+F 2 "~" H 3138 4550 30  0000 C CNN
+F 3 "~" H 3100 4700 60  0000 C CNN
+	1    3100 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C7
+U 1 1 549E71C4
+P 3100 5300
+F 0 "C7" H 3100 5400 40  0000 L CNN
+F 1 "22p" H 3106 5215 40  0000 L CNN
+F 2 "~" H 3138 5150 30  0000 C CNN
+F 3 "~" H 3100 5300 60  0000 C CNN
+	1    3100 5300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2700 5000 0    60   Input ~ 0
+GND
+Wire Wire Line
+	2900 4700 2800 4700
+Wire Wire Line
+	2800 4700 2800 5300
+Wire Wire Line
+	2800 5300 2900 5300
+Wire Wire Line
+	2700 5000 2800 5000
+Connection ~ 2800 5000
+Wire Wire Line
+	3300 5300 4050 5300
+Wire Wire Line
+	3300 4700 4350 4700
+Connection ~ 3600 4700
+Wire Wire Line
+	4050 5300 4050 4800
+Wire Wire Line
+	4050 4800 4350 4800
+Connection ~ 3600 5300
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=12/26/2014 3:45:08 PM
+update=12/27/2014 12:49:17 AM
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -57,8 +57,8 @@ LastNetListRead=modular-arm-usb.net
 UseCmpFile=1
 PadDrill=0.000000000000
 PadDrillOvalY=0.000000000000
-PadSizeH=1.143000000000
-PadSizeV=7.600000000000
+PadSizeH=1.750000000000
+PadSizeV=0.250000000000
 PcbTextSizeV=1.500000000000
 PcbTextSizeH=1.500000000000
 PcbTextThickness=0.300000000000
@@ -67,9 +67,9 @@ ModuleTextSizeH=1.000000000000
 ModuleTextSizeThickness=0.150000000000
 SolderMaskClearance=0.000000000000
 SolderMaskMinWidth=0.000000000000
-DrawSegmentWidth=0.200000000000
+DrawSegmentWidth=0.100000000000
 BoardOutlineThickness=0.100000000000
-ModuleOutlineThickness=0.150000000000
+ModuleOutlineThickness=0.100000000000
 [pcbnew/libraries]
 LibDir=
 LibName1=sockets
@@ -95,3 +95,4 @@ LibName20=parts/myelin/S2B-PH-SM4-TB-LF-SN
 LibName21=parts/myelin/ws2812b_pp
 LibName22=parts/myelin/usb_a_pcb
 LibName23=parts/myelin/nxp_lqfp48_by_hand
+LibName24=parts/myelin/LD1117V33
