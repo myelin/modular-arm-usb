@@ -1,4 +1,7 @@
-*.bak
+*.000
 *.bck
-*.kicad_pcb-bak
-
+*.bak
+*-bak
+*~
+pcb.zip
+paste*.zip

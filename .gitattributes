@@ -1,9 +1,11 @@
 # force all known text files to use native line endings (while not touching other defaults)
 
+.gitattributes      text
+.gitignore          text
 *.cmp               text
 *.dcm               text
 *.kicad_pcb         text
-*.lib               text  
+*.lib               text
 *.md                text
 *.mod               text
 *.net               text
