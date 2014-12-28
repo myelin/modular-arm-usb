@@ -1,0 +1,14 @@
+# force all known text files to use native line endings (while not touching other defaults)
+
+*.cmp               text
+*.dcm               text
+*.kicad_pcb         text
+*.lib               text  
+*.md                text
+*.mod               text
+*.net               text
+pcb/fp-lib-table    text
+*.pro               text
+*.py                text
+*.sch               text
+*.txt               text
