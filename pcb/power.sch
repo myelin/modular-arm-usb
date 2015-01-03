@@ -34,7 +34,7 @@ LIBS:lpc11u14fbd48
 LIBS:nRF24L01+
 LIBS:pp_ws2812b
 LIBS:modular-arm-usb-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -126,7 +126,7 @@ Text GLabel 6950 4850 3    60   Input ~ 0
 GND
 Text GLabel 7950 4300 2    60   Input ~ 0
 3V3
-Text Notes 6200 5300 0    60   ~ 0
+Text Notes 6450 6250 0    60   ~ 0
 Two 3v3 reg options -- one TO-220, one SOT-23 (for Fablab compatibility)\n\nLD1117V33 = TO-220 0.8A 3v3 LDO, $0.31-$0.65\n\nLM3480IM3-3.3 = SOT-23 0.1A 3v3 LDO, US$0.34,\napparently has issues if you apply power to the output\nwhen the input is floating\n\nLD1117V33 suggests 100n cap on input, 10u on output.
 Text Notes 2250 6000 0    60   ~ 0
 Lipo battery connectors have power on pin 2
@@ -141,7 +141,7 @@ F 3 "~" H 6250 4550 60  0000 C CNN
 	1    6250 4550
 	1    0    0    -1  
 $EndComp
-Text Notes 6700 1300 0    60   ~ 0
+Text Notes 6700 2350 0    60   ~ 0
 REQUIREMENTS\n\nLPC11U14 requires 1.8-3.6V\n\nnRF24L01+ requires 1.9-3.6V\n\nTo bring the lipo output voltage down to a safe level, we pass it through a\ndiode, so 3.4V-4.2V becomes 2.7-3.5V.\n\nWS2812B LEDs won't work well below 3v, but their supply voltage can't\nbe too much more than the mcu's logic voltage, so we'll use 3V3 for them.\n\nPOPULATE EITHER THE BATTERY CONNECTOR AND DIODE, OR\nTHE FUSE AND REGULATOR.  DOING BOTH ON ONE BOARD WILL\nRESULT IN VUSB SHORTING TO 3V3 THROUGH THE BATT DIODE.
 $Comp
 L DIODE D1
