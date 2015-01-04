@@ -15,27 +15,6 @@ IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
-TimeStamp = /549D4C8A/549D6202;
-Reference = C3;
-ValeurCmp = 22u;
-IdModule  = SM1206;
-EndCmp
-
-BeginCmp
-TimeStamp = /549D4C8A/549D5130;
-Reference = C4;
-ValeurCmp = 100n;
-IdModule  = SM0805_NOSILKSCREEN;
-EndCmp
-
-BeginCmp
-TimeStamp = /549D4C8A/549D513F;
-Reference = C5;
-ValeurCmp = 22u;
-IdModule  = SM1206;
-EndCmp
-
-BeginCmp
 TimeStamp = /549D4C68/549E71AB;
 Reference = C6;
 ValeurCmp = 22p;
@@ -190,24 +169,10 @@ IdModule  = ;
 EndCmp
 
 BeginCmp
-TimeStamp = /549D4C8A/549D510B;
-Reference = U2;
-ValeurCmp = LD1117V33;
-IdModule  = LD1117V33;
-EndCmp
-
-BeginCmp
 TimeStamp = /549D4CC3/549D5C9C;
 Reference = U3;
 ValeurCmp = NRF24L01+;
 IdModule  = NRF24L01_MODULE;
-EndCmp
-
-BeginCmp
-TimeStamp = /549D4C68/549E7192;
-Reference = X1;
-ValeurCmp = CRYSTAL;
-IdModule  = ;
 EndCmp
 
 EndListe

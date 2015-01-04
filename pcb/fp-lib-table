@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name w_smd_trans)(type Legacy)(uri ${KIPRJMOD}/parts/smisioto/mod_smd_trans/w_smd_trans.mod)(options "")(descr ""))
+  (lib (name myelin)(type KiCad)(uri ${KIPRJMOD}/parts/myelin/myelin.pretty)(options "")(descr ""))
 )
