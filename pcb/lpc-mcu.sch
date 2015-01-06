@@ -104,7 +104,7 @@ U 1 1 549D5A39
 P 2300 2000
 F 0 "CON1" H 2205 2330 50  0000 C CNN
 F 1 "ARM-SWD-HEADER" H 2035 1670 50  0000 L BNN
-F 2 "myelin:pin_array_5x2_50mil_smd" H 2300 1600 50  0000 C CNN
+F 2 "myelin:pin_array_5x2_50mil" H 2300 1600 50  0000 C CNN
 F 3 "~" H 2375 2000 60  0000 C CNN
 	1    2300 2000
 	1    0    0    -1  
@@ -217,7 +217,7 @@ U 1 1 549D6951
 P 1700 1500
 F 0 "R1" V 1780 1500 40  0000 C CNN
 F 1 "NC" V 1707 1501 40  0000 C CNN
-F 2 "~" V 1630 1500 30  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" V 1630 1500 30  0000 C CNN
 F 3 "~" H 1700 1500 30  0000 C CNN
 	1    1700 1500
 	1    0    0    -1  
@@ -237,15 +237,15 @@ One bypass cap for each VDD/VSS pair.
 Text Notes 8100 2500 0    60   ~ 0
 TO DO: figure out if we need to reduce the USB\nbus voltage before it gets to the MCU.
 $Comp
-L CRYSTAL X1
+L CRYSTAL_SMD X1
 U 1 1 549E7192
 P 3600 5000
 F 0 "X1" H 3600 5150 60  0000 C CNN
-F 1 "CRYSTAL" H 3600 4850 60  0000 C CNN
+F 1 "16M xtal" H 3600 4850 60  0000 C CNN
 F 2 "myelin:Crystal_Round_Horizontal_3mm_can_pad" H 3600 5250 60  0000 C CNN
 F 3 "~" H 3600 5000 60  0000 C CNN
 	1    3600 5000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L C C6
@@ -278,7 +278,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 5300 2900 5300
 Wire Wire Line
-	2700 5000 2800 5000
+	2700 5000 3500 5000
 Connection ~ 2800 5000
 Wire Wire Line
 	3300 5300 4050 5300
@@ -448,4 +448,8 @@ Text Label 8750 6700 0    60   ~ 0
 MISO1
 Text Label 8750 6600 0    60   ~ 0
 SSEL1
+Wire Wire Line
+	3600 4800 3600 4700
+Wire Wire Line
+	3600 5300 3600 5200
 $EndSCHEMATC

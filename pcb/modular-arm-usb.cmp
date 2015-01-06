@@ -43,13 +43,6 @@ IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
-TimeStamp = /549D4C68/549D5A39;
-Reference = CON1;
-ValeurCmp = ARM-SWD-HEADER;
-IdModule  = pin_array_5x2_50mil_smd;
-EndCmp
-
-BeginCmp
 TimeStamp = /549D4C8A/549D6318;
 Reference = D1;
 ValeurCmp = DIODE;
@@ -117,13 +110,6 @@ TimeStamp = /549D4C68/549E9A45;
 Reference = P6;
 ValeurCmp = GPIO2;
 IdModule  = PIN_ARRAY-6X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /549D4C68/549D6951;
-Reference = R1;
-ValeurCmp = NC;
-IdModule  = SM0805_NOSILKSCREEN;
 EndCmp
 
 BeginCmp
