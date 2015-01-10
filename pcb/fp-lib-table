@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name w_smd_trans)(type Legacy)(uri ${KIPRJMOD}/parts/smisioto/mod_smd_trans/w_smd_trans.mod)(options "")(descr ""))
   (lib (name myelin)(type KiCad)(uri ${KIPRJMOD}/parts/myelin/myelin.pretty)(options "")(descr ""))
+  (lib (name OMRON-PUSH-BUTTON-B3SN-3112P)(type Legacy)(uri ${KIPRJMOD}/parts/rancidbacon/OMRON-PUSH-BUTTON-B3SN-3112P.mod)(options "")(descr ""))
 )
