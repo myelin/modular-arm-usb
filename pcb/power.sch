@@ -73,7 +73,7 @@ F 3 "" H 5350 4600 60  0000 C CNN
 	1    5350 4600
 	1    0    0    -1  
 $EndComp
-Text GLabel 2750 4500 0    60   Input ~ 0
+Text GLabel 1250 2900 0    60   Input ~ 0
 VUSB
 $Comp
 L FUSE F1
@@ -193,7 +193,29 @@ F 3 "" H 6950 4350 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	2950 5500 3400 5500
+$Comp
+L SW_SPDT SW1
+U 1 1 54B0B8AC
+P 1800 2950
+F 0 "SW1" H 1810 3090 50  0000 C CNN
+F 1 "SW_SPDT" H 1800 2855 50  0000 C CNN
+F 2 "" H 1800 2950 60  0000 C CNN
+F 3 "" H 1800 2950 60  0000 C CNN
+	1    1800 2950
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	3400 5500 3400 4500
-Connection ~ 3400 4500
+	1950 2950 2500 2950
+Text Label 2500 2950 2    60   ~ 0
+VIN
+Wire Wire Line
+	1650 2900 1250 2900
+Wire Wire Line
+	1650 3000 1250 3000
+Text Label 2750 4500 0    60   ~ 0
+VIN
+Text Label 3400 5500 2    60   ~ 0
+VBATT
+Text Label 1250 3000 0    60   ~ 0
+VBATT
 $EndSCHEMATC
