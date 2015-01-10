@@ -35,6 +35,7 @@ LIBS:nRF24L01+
 LIBS:pp_ws2812b
 LIBS:mcp1700t-3302e-tt
 LIBS:sw_push_alternate_pinout_via_w_device_lib
+LIBS:w_device
 LIBS:modular-arm-usb-cache
 EELAYER 25 0
 EELAYER END

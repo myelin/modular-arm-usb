@@ -94,3 +94,4 @@ LibName33=parts/myelin/nRF24L01+
 LibName34=parts/myelin/pp_ws2812b
 LibName35=parts/myelin/mcp1700t-3302e-tt
 LibName36=parts/smisioto/lib_w_device/sw_push_alternate_pinout_via_w_device_lib
+LibName37=parts/smisioto/lib_w_device/w_device
