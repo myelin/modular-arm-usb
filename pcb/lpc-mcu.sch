@@ -327,7 +327,7 @@ XTALOUT
 Connection ~ 4050 4800
 Wire Wire Line
 	1150 6750 1600 6750
-Text Label 6250 4600 0    60   ~ 0
+Text Label 6250 3600 0    60   ~ 0
 LED_INPUT
 Text Label 6250 2600 0    60   ~ 0
 SCL
@@ -363,8 +363,6 @@ Text Label 6250 3300 0    60   ~ 0
 AD0
 Text Label 6250 3400 0    60   ~ 0
 AD1
-Text Label 6250 3600 0    60   ~ 0
-AD3
 Text Label 6250 3800 0    60   ~ 0
 AD5
 Text Label 6250 4400 0    60   ~ 0
@@ -373,9 +371,9 @@ Text Label 6250 4500 0    60   ~ 0
 AD7
 Text Label 6250 2300 0    60   ~ 0
 CLKOUT
-Text Label 6250 5700 0    60   ~ 0
+Text Label 6250 4700 0    60   ~ 0
 RXD
-Text Label 6250 5800 0    60   ~ 0
+Text Label 6250 4600 0    60   ~ 0
 TXD
 Text Label 8750 6600 0    60   ~ 0
 RXD

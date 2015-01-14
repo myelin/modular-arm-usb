@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-02 BZR 5348)-product   date = 1/13/2015 8:39:20 AM
+Cmp-Mod V01 Created by Cvpcb (2015-01-02 BZR 5348)-product   date = 1/14/2015 12:16:25 AM
 
 BeginCmp
 TimeStamp = /549D4C68/549D5E39;
@@ -138,6 +138,13 @@ TimeStamp = /549D4C68/549E9A45;
 Reference = P6;
 ValeurCmp = GPIO2;
 IdModule  = myelin:PIN_ARRAY_6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /549D4C81/54B628D7;
+Reference = P7;
+ValeurCmp = USBC;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01;
 EndCmp
 
 BeginCmp
